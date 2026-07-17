@@ -1,0 +1,23 @@
+{
+  "name": "nride",
+  "version": "1.0.0",
+  "description": "Ride-sharing app for Nalbari city",
+  "main": "server/index.js",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "ridesharing",
+    "nalbari",
+    "transportation"
+  ],
+  "author": "Garima Tahbildar",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
